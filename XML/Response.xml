@@ -1,0 +1,9 @@
+<Response>
+	<Mail>
+	</Mail>
+	<Chat>
+		<Status/>
+		<Invitations/>
+		<Messages/>
+	</Chat>
+</Response>

@@ -1,0 +1,19 @@
+<html>
+<body>
+<div style="position:absolute; width:327px; height:241px; left: 0px; top:0px; background-color:#D2D2D2; border:1px solid BLACK; z-index:2;">
+	<div style="position:absolute;left:0px;width:100%;text-align:center;background-color:#4E4E4E;color:white;">Invitation</div>
+	<div id="invitation_div_1" style="position:absolute;left:0px;top:0px;display:inline;">
+        <label style="position:absolute; left: 47px; top: 59px;">From</label>
+        <input type="text" id="invitation_from" style="position:absolute; left: 91px; top: 58px; width: 178px;">    
+        <textarea name="invitation_msg" id="invitation_msg" style="position:absolute; left:91px; width: 180px; height: 63px; top: 106px;" readonly></textarea>
+        <input type="button" style="position:absolute; left: 91px; top: 190px; width: 64px;" value="Accept" onClick="AcceptInvitation()">
+    	<input type="button" style="position:absolute; left: 207px; top: 190px; width: 64px;" value="Reject" onClick="RejectInvitation()">
+    </div>
+    <div id="invitation_div_2" style="position:absolute;left:0px;top:0px;display:none;">
+	  <label style="position:absolute; left: 54px; top: 88px; width: 66px;">Nick name</label>
+      <input type="text" id="invitation_nick_name" style="position:absolute; left: 131px; top: 88px; width: 145px;">
+      <input type="button" value="OK" style="position:absolute; left: 131px; top: 158px; width: 73px;" onClick="AcceptInvitationOK()">
+    </div> 
+</div>
+</body>
+</html>

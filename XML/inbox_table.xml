@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Columns>
+	<Column id='check' width='20px' caption='Check' type='Check'/>
+	<Column id='sender' width='200px' caption='Sender' type='Text' />
+	<Column id='subject' width='400px' caption='Subject' type='Text' />
+	<Column id='time' width='100px' caption='Time' type='Text' />
+</Columns>

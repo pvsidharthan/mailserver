@@ -1,0 +1,40 @@
+	<div id="address_div" style="position:relative;overflow:visible;border:1px solid red;">
+	  	<div style="position:relative;height:82px;">
+      		<label style="position:absolute; left: 45px; top: 22px; width: 49px; height: 15px;">To:</label>
+			<textarea id="to" style="position:absolute; left: 80px; top: 15px; width: 477px; height:35px;"></textarea>
+	        <label id="cc_label" style="position:absolute; left: 80px; top: 58px; text-decoration:underline; color:blue;" onclick="Add_CC()" clicked="0">Add Cc</label>
+            <label id="bcc_label" style="position:absolute; left: 141px; top: 58px; text-decoration:underline; color:blue;" onclick="Add_BCC()" clicked="0">Add Bcc</label>
+            <label id="att_label" style="position:absolute; left: 461px; top: 57px; text-decoration:underline; color:blue;" onclick="Add_attachment(event)" clicked="0">Add attachment</label>
+            <label style="position:absolute; left: 135px; top: 58px; color:black;">|</label>
+      	</div>
+        <div id="cc_div" style="position:relative;height:45px;display:none;">
+			 <label style="position:absolute; left: 45px; top: 0px; width: 49px; height: 15px;">Cc:</label>
+			 <textarea id="cc" style="position:absolute; left: 80px; top: 0px; width: 477px; height:35px;"></textarea>
+        </div>
+        <div id="bcc_div" style="position:relative;height:45px;display:none;">
+        	<label style="position:absolute; left: 45px; top: 0px; width: 49px; height: 15px;">Bcc:</label>
+			<textarea id="bcc" style="position:absolute; left: 80px; top: 0px; width: 477px; height:35px;"></textarea>
+		</div> 
+    </div>
+    <div id="attachment_div" style="position:relative;overflow:visible;border:1px solid green;display:none;">
+    	<iframe id="att_iframe" src="http://localhost:8080/Mail_Server/attachment.jsp" name="att_iframe" style="display:none;"></iframe>
+        <form name="att_form" target="att_iframe" enctype="multipart/form-data" action="http://localhost:8080/Mail_Server/attachment.jsp" method="post">
+        	<div id="attach_file_div" style="position:relative;" attach_nos = "0" deleted_nos="0">
+             <input type="hidden" id="att_username" name="att_username" value="testing"/>
+                <table border="0px">
+                	<tbody id="attach_tbody">
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+  <div style="position:relative;overflow:auto;border:1px solid blue;height:435px;">
+  <label style="position:absolute; left: 24px; top: 15px;">Subject</label>
+      <input id="subject" type="text" style="position:absolute; left: 80px; top: 15px; width: 518px;" />
+		
+
+      <input type='button' value="Send" onclick="Send_Mail()"style="position:absolute; left: 99px; top: 400px; width:78px;"/>
+      <input type='button' value="Discard" onclick="Display_Home()" style="position:absolute; left: 207px; top: 400px; width:80px;"/>
+</div>
+  <div name="message_body" id="message_body" style="position:absolute; width:480px; height:270px; left:30px; top:145px;">
+        </div>

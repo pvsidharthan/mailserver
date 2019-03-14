@@ -1,0 +1,7 @@
+<iframe id="inline_iframe" src="http://localhost:8080/Mail_Server/attachment.jsp" name="inline_iframe" style="display:none;"></iframe>
+<form name="inline_form" id="inline_form" target="inline_iframe" enctype="multipart/form-data"   action="http://localhost:8080/Mail_Server/attachment.jsp" method="post">
+<input type='file' name="inline" id="inline" style="display:block;"/>
+<tr>
+<td><input type="button" id="inline_submit" value="Done" onClick="addImage()"/>
+<td><input type="button" id="inline_cancel" value="cancel" onClick="cancel_inline()"/>
+</form>

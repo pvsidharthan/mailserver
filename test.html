@@ -1,0 +1,22 @@
+<html>
+	<head>
+    	<script language="javascript">
+		function test() {
+			document.getElementById('d1').style.display = 'none';
+		}
+		function test1() {
+			document.getElementById('d1').style.display = 'block';
+		}
+		</script>
+    </head>
+<body>
+	<div style='position:relative;background-color:blue;border:1px solid black;display:block;'>
+    	<div style = 'position:relative;background-color:red;height:200px;display:block;'>
+        	<input type='button' onclick='test()' value = 'hide'>
+                    	<input type='button' onclick='test1()' value = 'show'>
+        </div>
+        <div id='d1' style = 'position:relative;background-color:green;height:200px;display:block;'>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+<script language="JavaScript" type="text/javascript" src="richtext.js"></script>
+</head>
+	<body>
+		<label>Sidharthan</label>
+		<br>
+		<form name="myform" onsubmit="return submitForm();" >
+		<script language="JavaScript" type="text/javascript">
+<!--
+//Usage: writeRichText(fieldname, html, width, height, buttons, readOnly)
+writeRichText('rte1', 'here&#39;s the "<em>preloaded</em> <b>content</b>"', 400, 200, true, false);
+//-->
+		</script>
+
+		<script language="JavaScript" type="text/javascript">
+<!--
+function submitForm() {
+//make sure hidden and iframe values are in sync before submitting form
+updateRTE('rte1'); //use this when syncing only 1 rich text editor ("rtel" is name of editor)
+//updateRTEs(); //uncomment and call this line instead if there are multiple rich text editors inside the form
+alert("Submitted value: "+document.myform.rte1.value) //alert submitted value
+return true; //Set to false to disable form submission, for easy debugging.
+}
+
+//Usage: initRTE(imagesPath, includesPath, cssFile)
+initRTE("images/", "", "");
+//-->
+		</script>
+			     
+			<input type="submit" value="submit" style="position:relative;">
+		</form>
+	</body>
+</html>
